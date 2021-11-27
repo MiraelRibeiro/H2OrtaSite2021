@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <link rel="shortcut icon" href="imagens/logo-favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="{% static 'paginas/css/style-cadastro.css' %}">
+
+    </head>
+    <body>
+        <div class="container">
+            {% comment %} {% if messages %}
+                {% for message in messages %}
+                    <div id="alert-tarefa" class="alert alert-{{message.extra_tags}} alert-dismissible fade show" role="alert">
+                    <center>{{ message }}</center>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                {% endfor %}
+            {% endif %} {% endcomment %}
+
+            <div class="container">
+                <header>
+                    <div class="img-wrapper">
+                        <img src="{% static 'paginas/img/bg4.jpg' %}" alt="">
+                    </div>
+                    <div class="banner">
+                        <h1>Não possui cadastro?</h1>
+                        <p>É simples.</p>
+                    </div>
+                    <form action="/criarconta/" method="POST">
+                    {% csrf_token %}
+                        <h3>Cadastro</h3>
+                        <div class="scrollbar">                            
+                            <input id='nome' type="text" name="first_name" placeholder="Nome">
+                            <input id='sobrenome' type="text" name="last_name" placeholder="SobreNome">                                                 
+                            <input id='usuario' type="email" name="username" placeholder="E-mail">
+                            <input id='senha' type="password" name="password1" placeholder="Senha">
+                            <input id='confsenha' type="password" name="password2" placeholder="Confirmar Senha">
+                            <input id='telefone' type="text" name="telefone" placeholder="Telefone">
+                            <input id='cpf' type="text" name="cpf" placeholder="CPF">
+                            <input id='cidade' type="text" name="cidade" placeholder="Cidade">
+                            <input id='estado' type="text" name="estado" placeholder="Estado">
+                            <input id='pais' type="text" name="pais" placeholder="País">
+                            <input id='cep' type="text" name="cep" placeholder="CEP">
+                        </div>
+                        
+                        <div class="bg_btn">
+                            <input id='submit' type="submit" value="Cadastre-se" class="entrar">
+                        </div>
+                        <div class="social">
+                            <p>Cadastre-se com suas redes-sociais:</p>
+                            <ul>
+                                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </header>
+            </div>
+            <script>
+                var nome = document.getElementById('nome')
+                var email = document.getElementById('email')
+                var senha = document.getElementById('senha')
+                var telefone = document.getElementById('telefone')
+                var pais = document.getElementById('pais')
+                var estado = document.getElementById('estado')
+                var cidade = document.getElementById('cidade')
+                var cpf = document.getElementById('cpf')
+                var cep = document.getElementById('cep')
+
+                nome.addEventListener('focus', ()=>{
+                    nome.style.borderColor = '#1abc9b'
+                })
+                nome.addEventListener('blur', ()=>{
+                    nome.style.borderColor = '#ccc'
+                })
+                email.addEventListener('focus', ()=>{
+                    email.style.borderColor = '#1abc9b'
+                })
+                email.addEventListener('blur', ()=>{
+                    email.style.borderColor = '#ccc'
+                })
+                senha.addEventListener('focus', ()=>{
+                    senha.style.borderColor = '#1abc9b'
+                })
+                senha.addEventListener('blur', ()=>{
+                    senha.style.borderColor = '#ccc'
+                })
+                telefone.addEventListener('focus', ()=>{
+                    telefone.style.borderColor = '#1abc9b'
+                })
+                telefone.addEventListener('blur', ()=>{
+                    telefone.style.borderColor = '#ccc'
+                })
+                cep.addEventListener('focus', ()=>{
+                    cep.style.borderColor = '#1abc9b'
+                })
+                cep.addEventListener('blur', ()=>{
+                    cep.style.borderColor = '#ccc'
+                })
+                cpf.addEventListener('focus', ()=>{
+                    cpf.style.borderColor = '#1abc9b'
+                })
+                cpf.addEventListener('blur', ()=>{
+                    cpf.style.borderColor = '#ccc'
+                })
+                cidade.addEventListener('focus', ()=>{
+                    cidade.style.borderColor = '#1abc9b'
+                })
+                cidade.addEventListener('blur', ()=>{
+                    cidade.style.borderColor = '#ccc'
+                })
+                estado.addEventListener('focus', ()=>{
+                    estado.style.borderColor = '#1abc9b'
+                })
+                estado.addEventListener('blur', ()=>{
+                    estado.style.borderColor = '#ccc'
+                })
+                estado.addEventListener('focus', ()=>{
+                    estado.style.borderColor = '#1abc9b'
+                })
+                estado.addEventListener('blur', ()=>{
+                    estado.style.borderColor = '#ccc'
+                })
+                pais.addEventListener('focus', ()=>{
+                    pais.style.borderColor = '#1abc9b'
+                })
+                pais.addEventListener('blur', ()=>{
+                    pais.style.borderColor = '#ccc'
+                })
+            </script>
+        </div>
+    </body>
+</html>

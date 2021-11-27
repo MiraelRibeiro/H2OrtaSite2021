@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link rel="shortcut icon" href="imagens/logo-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'paginas/css/style-login.css' %}">
+</head>
+<body>
+	<div class="container">
+			<header>
+				<div class="img-wrapper">
+					<img src="{% static 'paginas/img/bg4.jpg' %}" alt="">
+				</div>
+				<div class="banner">
+					<h1>Já possui cadastro?</h1>
+					<p>Faça login.</p>
+				</div>
+				<form method=POST>
+					{% csrf_token %}
+					<h3>Login</h3>
+					<p>Digite seu e-mail:</p>
+					<input id='email' type="email" name="username" placeholder="E-mail">
+					<p>Digite sua senha:</p>
+					<input id='senha' type="password" name="password" placeholder="Senha">
+					<div class="bg_btn">
+						<input id='submit' type="submit" name="acao" value="Entrar" class="entrar">
+					</div>
+					<div class="social">
+						<p>Ou</p>
+						<p>Faça login com suas redes-sociais:</p>
+						<ul>
+							<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+						</ul>
+						<div class="cadastro">
+							<p>Não possui cadastro? Se <a href="../criarconta/">registre</a> agora!</p>
+						</div>
+					</div>
+				</form>
+			</header>
+    </div>
+	<script>
+        var email = document.getElementById('email')
+        var senha = document.getElementById('senha')
+
+        email.addEventListener('focus', ()=>{
+            email.style.borderColor = '#1abc9b'
+        })
+        email.addEventListener('blur', ()=>{
+            email.style.borderColor = '#ccc'
+        })
+        senha.addEventListener('focus', ()=>{
+            senha.style.borderColor = '#1abc9b'
+        })
+        senha.addEventListener('blur', ()=>{
+            senha.style.borderColor = '#ccc'
+        })
+    </script>
+</body>
+</html>

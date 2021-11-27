@@ -1,0 +1,282 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: Helvetica, "Trebuchet MS", sans-serif;
+	background: #1abc9b
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/************ COMEÇO ESTILO CARRINHO.HTML   ********/
+
+
+/******** COMEÇO TOPO *********/
+
+
+.top {
+	background: #083460;
+	height: 125px;
+	position: relative;
+	font-size: 1.5em;
+}
+
+.logo img {
+	position: absolute;
+	top: -40px;
+	left: -20px;
+	height: 200px;
+	width: 450px;
+}
+
+ul.menu-navegacao {
+	float: right;
+	margin-top: 10px;
+}
+
+ul.menu-navegacao li{
+	display: inline;
+	margin-left: 50px;
+}
+
+ul.menu-navegacao a {
+	color: #FFF;
+
+}
+
+img.carrinho-logo {
+	margin-top: 15px;
+	border-bottom:  1px dashed #FFF;
+}
+
+.negrito {
+	font-weight: bold;
+}
+.ultimo	{
+	margin-right: 50px;
+}
+
+
+/********** FIM TOPO 
+
+	
+
+
+COMEÇO MENU ***********/
+
+.conteudo {
+	width: 85%;
+	height: 450px;
+	margin: 40px auto;
+	background: #f6f6f6;
+	text-align: center;
+}
+
+.top-conteudo {
+	background: #ffffff;
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid #A9A9A9;
+}
+
+
+
+.cabecalho h2 {
+	float: left;
+	margin-top: 25px;
+	margin-left: 70px;
+	color: #808080;
+	font-weight: normal;
+}
+
+.cabecalho h2.primeiro {
+	margin-left: 70px;
+	margin-right: 15px;
+}
+
+.cabecalho h2.segundo {
+	margin-right: 275px;
+
+}
+
+
+
+.bottom-conteudo {
+	float: right;
+	margin-top: 330px;
+	margin-right: 45px;
+}
+
+.botoes a {
+	padding: 10px;
+	margin-left: 15px;
+	border-radius: 10px;
+}
+
+.atualizar {
+	border: 2px solid #808080;
+	color: #696969;
+	-webkit-text-stroke: 0.2px #696969;
+	font-family: sans; color: #696969;
+}
+
+.continuar {
+	background: #f15757;
+	color: #fff;
+	text-shadow: 0px 0px 0px white, 0 0 1em red, 0 0 0.2em black;
+}
+
+
+
+
+
+
+
+/*****************     FIM PÁGINA CARRINHO 
+
+
+COMEÇO PÁGINA PERFIL.HMTL      ******************/
+
+
+/******* COMEÇO TOPO ***********/
+
+
+#top-conteudo {
+	background: #ffffff;
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #A9A9A9;
+}
+
+
+
+.cabecalho h3 {
+	float: left;
+	margin-top: 38px;
+	margin-left: 70px;
+	color: #808080;
+	font-weight: normal;
+}
+
+
+.cabecalho h3#primeiro {
+	margin-left: 9px;
+	margin-right: 80px;
+}
+
+
+.cabecalho h3#segundo {
+	margin-right: 150px;
+}
+
+.cabecalho h3#terceiro {
+	margin-right: 220px;
+}
+
+
+
+
+.cabecalho h3#quarto {
+
+}
+
+
+
+
+.top-conteudo-botoes {
+	float: right;
+	margin-top: 10px;
+	margin-right: 45px;
+}
+
+
+#botoes a {
+	padding: 5px;
+	margin-left: 165px;
+	border-radius: 10px;
+	font-size: 0.9em;
+	margin-right: 35px;
+}
+
+
+
+
+
+.redefinir {
+	border: 1.9px solid black;
+	background: #f15757;
+	color: #fff;
+	text-shadow: 0px 0px 0px white, 0 0 1em red, 0 0 0.2em black;
+	width: 200px;
+	height: 50px;
+}
+
+
+/********** FIM CONTEUDO TOPO ********/
+
+
+
+/******* COMEÇO CONTEUDO MIDDLE *********/
+
+
+
+
+
+#middle-conteudo {
+	float: left;
+	margin-top:18px;
+	margin-left: 25px;
+}
+
+#titulo-meio {
+	font-weight: normal;
+	color: #696969;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.acrescentador {
+	height: 50px;
+	width: 150px;
+	background: #FFF;
+	border-radius: 12px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.acrescentador span {
+	width: 100%
+	text-align: center;
+	font-size: 55px;
+	font-weight: 600;
+	cursor: pointer;
+
+}
+
+.acrescentador span.numero {
+	font-size: 50px;
+	border-right: 2px solid rgba(0,0,0,0.2);
+	border-left: 2px solid rgba(0,0,0,0.2);
+	pointer-events: none;
+}
+/*

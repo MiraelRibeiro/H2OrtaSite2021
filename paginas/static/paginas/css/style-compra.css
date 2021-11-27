@@ -1,0 +1,243 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: Helvetica, "Trebuchet MS", sans-serif;
+	background: #1abc9b;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/************ COMEÇO ESTILO HOME.HTML   ********/
+
+
+/******** COMEÇO TOPO *********/
+
+
+header {
+	background: #083460;
+	height: 125px;
+	position: relative;
+	font-size: 1.5em;
+}
+
+.logo img {
+	position: absolute;
+	top: -40px;
+	left: -20px;
+	height: 200px;
+	width: 450px;
+}
+
+ul.menu-navegacao {
+	float: right;
+	margin-top: 10px;
+}
+
+ul.menu-navegacao li{
+	display: inline;
+	margin-left: 50px;
+}
+
+ul.menu-navegacao a {
+	color: #FFF;
+	text-shadow: 2px 2px 3px black;
+}
+
+img.carrinho-logo {
+	margin-top: 15px;
+	border-bottom:  1px dashed #FFF;
+}
+
+.home:hover{
+	color: #1abc9b;
+	transition: all 1s;
+}
+
+.negrito {
+	font-weight: bold;
+}
+
+.negrito:hover{
+	color: #1abc9b;
+	transition: all 1s;
+}
+
+.ultimo	{
+	margin-right: 50px;
+}
+
+.ultimo:hover{
+	color: #1abc9b;
+	transition: all 1s;
+}
+
+/********** FIM HEADER **********/
+
+/********* COMEÇO CONTEUDO *********/
+
+.conteudo {
+	width: 75%;
+	margin: 40px auto;
+	background: #f6f6f6;
+	border-radius: 7px;
+	min-height: 90vh;
+}
+
+.conteudo h1{
+	font-family: 'Roboto Slab', sans-serif;
+	color: #036955;
+	text-align: left;
+	text-shadow: .4px .4px .5px rgb(43, 42, 42);
+	font-size: 42px;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+.conteudo .forms{
+	padding-left: 1rem;
+	margin: 3.5rem 4.5rem;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	column-gap: 2rem;
+	row-gap: 2rem;
+}
+
+.conteudo .forms label{
+	font-family: 'Josefin Slab', sans-serif;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.conteudo .forms input[type="number"]{
+	font-family: 'Roboto Slab', sans-serif;
+	width: 4rem;
+	font-size: 2rem;
+	outline: none;
+	border-radius: 10px;
+}
+
+.conteudo .forms .btn{
+	background: #43cea2;  
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  
+    background: linear-gradient(to right, #185a9d, #43cea2); 
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: white;
+	text-transform: uppercase;
+	padding: 1rem;
+	cursor: pointer;
+	grid-column: 2;
+	margin-bottom: 3rem;
+	border-radius: 25px;
+	border: none;
+}
+
+.lista ul{
+	padding-top: 20px;
+	list-style-type: none;
+}
+
+.conteudo .forms .btn:hover{
+	background: #185a9d;
+}
+
+.conteudo-final {
+	width: 75%;
+	margin: 40px auto;
+	background: #adaeb1;
+	border-radius: 7px;
+	min-height: 55vh;
+}
+
+.conteudo-final h1{
+	font-family: 'Roboto Slab', sans-serif;
+	color: #0fa788;
+	text-align: left;
+	text-shadow: .4px .4px .5px rgb(43, 42, 42);
+	font-size: 42px;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+.conteudo-final p{
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 1.8rem;
+	padding-top: 1.5rem;
+	padding-left: 2.7rem;
+}
+
+.conteudo-final button{
+	background: #43cea2;  
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  
+    background: linear-gradient(to right, #185a9d, #43cea2); 
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: white;
+	text-transform: uppercase;
+	padding: 1.2rem;
+	cursor: pointer;
+	margin-top: 2rem;
+	margin-left: 40rem;
+	margin-bottom: 3rem;
+	border-radius: 25px;
+	border: none;
+}
+
+.conteudo-final button:hover{
+	background: #185a9d;
+}
+
+/******** FIM CONTEUDO **********/
+
+/******** COMEÇO FOOTER **********/
+
+.footer-content{
+	background: #083460;
+	height: 95px;
+	position: relative;
+	text-align: left;
+	text-shadow: 1px 1px 1px black;
+	padding-top: 5.7rem;
+	padding-left: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-content p{
+	color: white;
+	font-size: 1.35em;
+	text-align: left;
+}
+
+.social-list a{
+	color: white;
+	font-size: 2rem;
+	margin: 2rem;
+	padding-right: 5rem;
+}
+
+.social-list a:hover{
+	color: #1abc9b;
+	transition: all 1s;
+}
+
+.social-list ul{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+/******** FIM FOOTER **********/
